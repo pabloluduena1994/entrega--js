@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelismedia</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header class="encabezado">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="tamLogo" src="../img/pelismedia.png" alt="Logo Pelismedia"></a>
+              <button class="navbar-toggler menuHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link active ancla" href="../index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart mx-5" id="carritoContenedor">0</i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="tienda">
+        <h1 class="titulosSecciones" data-aos="fade-down">Tienda</h1>
+      </div>
+     
+      <div class="row mt-5" id="contenedor"></div>
+
+      <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Carrito</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn vaciarCompra" id="vaciarCarrito">Vaciar carrito</button>
+                <button type="button" id="procesarCompra" class="btn continuarCompra">Continuar compra</button>
+                <button type="button" class="btn cerrarCompra" data-bs-dismiss="modal">Cerrar</button>
+                <span class="precioTotal">Precio total: $</span>
+                <p class="text-center" id="precioTotal"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h1 class="text-center pt-5 pb-4">Lista de películas</h1>
+        <hr>
+        <div id="contenedor">
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid py-3 my-4">
+      <a href="../index.html" class="d-flex align-items-center justify-content-center"> <img src="../img/pelismedia.png" alt="Logo Pelismedia"></a>
+      <p class="text-center copyIgriega">&copy; 2022 Pelismedia</p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

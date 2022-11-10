@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+.imagen {
+    max-width:100%; }
+
+a {
+    cursor:pointer; }
+
+.alerta {
+    font-weight:700; }
+
+    body {
+    background-color: #343434;
+    overflow-x: hidden; }
+
+.modal-contenedor {
+    display:flex;
+    align-items: center;
+    gap:2rem; }
+
+.img-carrito {
+    width:200px;
+    padding:20px; } 
+
+.modal-content {
+    background-color: white; }
+
+.parrafo {
+    font-weight: 900;
+    font-style: italic; }
+
+#precioTotal {
+    margin:0;
+    padding:0; }
+
+a {
+    text-decoration: none; }
+
+.boton {
+    opacity:0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../img/fondo-web.jpg);
+  color: white; }
+
+.encabezado {
+  grid-area: encabezado;
+  background-color: #17181C;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+
+nav {
+  padding: 10px; }
+  nav ul li {
+    padding: 10px; }
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 20px; }
+      nav ul li a:hover {
+        background-color: #BF1B86; }
+
+.tamLogo {
+  width: 150px; }
+
+.ancla {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: white; }
+  .ancla:hover {
+    color: white; }
+
+.active {
+  background-color: #BF1B86; }
+
+.menuHamburguesa {
+  border: 2px #e93f8d solid;
+  background-color: rgba(233, 63, 141, 0.25);
+  color: white; }
+
+.textAlignCenter {
+  text-align: center; }
+
+li {
+  list-style-type: none; }
+
+  footer {
+    grid-area: footer;
+    padding: 40px;
+    background-color: #2e2e2f;
+    color: white; }
+    footer ul li a img {
+      width: 30px; }
+  
+  .titulosSecciones {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-bottom: 200px; }
+
+.tienda {
+    grid-area: tienda;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/fondo-pelicula.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%; }
+
+p {
+    color: #343434; }
+
+.btn {
+    background-color: #BF1B86; }
+    .btn:hover {
+        background-color: rgba(233, 63, 141, 0.95);
+    }
+
+.vaciarCompra {
+    background-color: #17181C;
+    color: white; }
+
+.continuarCompra {
+    background-color: #17181C;
+    color: white; }
+
+.cerrarCompra {
+    background-color: #17181C;
+    color: white; }
+
+.precioTotal {
+    color: #343434; }
+
+.noAgregaste {
+    color: #BF1B86;
+    font-weight: bold; }
+
+.spinner {
+        margin: 100px auto;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        text-align: center;
+        
+        -webkit-animation: sk-rotate 2.0s infinite linear;
+        animation: sk-rotate 2.0s infinite linear;
+      }
+      
+.dot1, .dot2 {
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        border-radius: 100%;
+        
+        -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+      }
+      
+.dot2 {
+        top: auto;
+        bottom: 0;
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+      }
+      
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+      
+@-webkit-keyframes sk-bounce {
+        0%, 100% { -webkit-transform: scale(0.0) }
+        50% { -webkit-transform: scale(1.0) }
+      }
+      
+@keyframes sk-bounce {
+        0%, 100% { 
+          transform: scale(0.0);
+          -webkit-transform: scale(0.0);
+        } 50% { 
+          transform: scale(1.0);
+          -webkit-transform: scale(1.0);
+        }
+      }
+
+.copyIgriega { color: white; }
+
+.nombreProducto { color: #343434; }
+
+.noHayProductos {
+  color: #BF1B86;
+  font-weight: bold;
+}
+
+.colorCompra {  color: white; }
+
+#totalProceso {
+  color: white;
+}
